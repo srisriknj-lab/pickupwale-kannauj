@@ -1,0 +1,8 @@
+{
+  "name": "Pickupwale Kannauj",
+  "description": "Premium courier & cargo partner for perfume manufacturers, exporters, traders, and online sellers in Kannauj.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
