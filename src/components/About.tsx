@@ -4,16 +4,16 @@ import { FileHeart, Droplet, Package, FolderOpen, Box, Truck, Leaf, Settings, Ho
 
 export default function About() {
   const specialties = [
-    { icon: <Droplet />, title: "Perfumes" },
-    { icon: <FileHeart />, title: "Attars" },
-    { icon: <Droplet />, title: "Essential Oils" },
-    { icon: <FolderOpen />, title: "Documents" },
-    { icon: <Package />, title: "Parcels" },
-    { icon: <Box />, title: "E-Commerce" },
-    { icon: <Truck />, title: "Industrial Cargo" },
-    { icon: <Leaf />, title: "Seeds" },
-    { icon: <Settings />, title: "Auto Parts" },
-    { icon: <Home />, title: "Home Products" },
+    { icon: Droplet, title: "Perfumes" },
+    { icon: FileHeart, title: "Attars" },
+    { icon: Droplet, title: "Essential Oils" },
+    { icon: FolderOpen, title: "Documents" },
+    { icon: Package, title: "Parcels" },
+    { icon: Box, title: "E-Commerce" },
+    { icon: Truck, title: "Industrial Cargo" },
+    { icon: Leaf, title: "Seeds" },
+    { icon: Settings, title: "Auto Parts" },
+    { icon: Home, title: "Home Products" },
   ];
 
   return (
@@ -48,12 +48,17 @@ export default function About() {
           >
             <h4 className="text-xl font-bold text-brand-blue mb-6">We Specialize In Transporting:</h4>
             <div className="grid grid-cols-2 gap-4">
-              {specialties.map((item, idx) => (
-                <div key={idx} className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm">
-                  <div className="text-brand-orange">{React.cloneElement(item.icon, { size: 20, strokeWidth: 2.5 })}</div>
-                  <span className="font-semibold text-gray-800">{item.title}</span>
-                </div>
-              ))}
+              {specialties.map((item, idx) => {
+                const Icon = item.icon;
+                return (
+                  <div key={idx} className="flex items-center gap-3 bg-white p-4 rounded-xl shadow-sm">
+                    <div className="text-brand-orange">
+                      <Icon size={20} strokeWidth={2.5} />
+                    </div>
+                    <span className="font-semibold text-gray-800">{item.title}</span>
+                  </div>
+                );
+              })}
             </div>
           </motion.div>
 
