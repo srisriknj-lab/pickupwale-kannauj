@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, Tag, ArrowRight } from 'lucide-react';
-import { motion, AnimatePresence } from 'motion/react';
+import { motion, AnimatePresence } from 'framer-motion';
 
 export default function DiscountPopup() {
   const [isOpen, setIsOpen] = useState(false);

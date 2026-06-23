@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { PackageSearch, CircleCheck, Star, ArrowRight, ShieldCheck, MapPin, Phone } from 'lucide-react';
 
 export default function Hero() {

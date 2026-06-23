@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { FileHeart, Droplet, Package, FolderOpen, Box, Truck, Leaf, Settings, Home } from 'lucide-react';
 
 export default function About() {

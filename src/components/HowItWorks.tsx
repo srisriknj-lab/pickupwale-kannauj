@@ -1,5 +1,5 @@
 import React from 'react';
-import { motion } from 'motion/react';
+import { motion } from 'framer-motion';
 import { PhoneCall, Truck, Box, Map, CheckCircle2 } from 'lucide-react';
 
 const steps = [
