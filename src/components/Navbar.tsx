@@ -7,6 +7,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <div className="flex items-center gap-3">
+            <img 
+              src="/src/assets/images/pickupwale_new_logo_1781715452666.jpg" 
+              alt="Pickupwale Logo" 
+              className="w-10 h-10 object-contain rounded-lg border border-gray-100" 
+              referrerPolicy="no-referrer" 
+            />
             <div className="flex flex-col">
               <span className="font-display font-bold text-2xl leading-none text-brand-blue tracking-tight">Pickupwale</span>
               <span className="text-[10px] font-semibold text-brand-orange tracking-widest uppercase mt-0.5">We Pickup We Deliver</span>
